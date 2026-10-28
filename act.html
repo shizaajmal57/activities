@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Events & Activities - Bahria College</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="act.css">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="logo.jpg" width="40px" height="40px">
+            <span class="logo-text">BAHRIA SCHOOL</span>
+                
+            </div>
+            <nav class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#campuses">Campuses</a>
+                <a href="#admission">Admission</a>
+                <a href="#activities" class="active">Activities</a>
+                <a href="#alumni">Alumni</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <span class="badge">LIFE AT BAHRIA COLLEGE</span>
+            <h1>School Events & Activities</h1>
+            <p>Celebrating learning, leadership, discipline and memorable moments across Bahria College campuses.</p>
+        </div>
+    </section>
+
+    <!-- Activities Section -->
+    <section class="highlights" id="activities">
+        <div class="highlights-header">
+            <span class="sub-title">OUR CAMPUS HIGHLIGHTS</span>
+            <h2>Moments That Make a Difference</h2>
+            <p>Explore our recent campus activities, sports gala, award ceremonies, and interactive sessions.</p>
+        </div>
+
+        <!-- Interactive Filter Buttons -->
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All Activities</button>
+            <button class="filter-btn" data-filter="events">Events</button>
+            <button class="filter-btn" data-filter="sports">Sports Gala</button>
+            <button class="filter-btn" data-filter="academics">Academics & IT</button>
+        </div>
+
+        <!-- Cards Grid -->
+        <div class="cards-grid">
+            
+            <!-- Card 1 -->
+            <div class="card" data-category="events">
+                <div class="card-image-wrapper">
+                    <img src="ins.jpg">
+                    <span class="campus-tag">BOYS WING</span>
+                </div>
+                <div class="card-body">
+                    <span class="date">6 SEPTEMBER 2026</span>
+                    <h3>Annual Investiture Ceremony</h3>
+                    <p class="desc">Student council oath-taking and badge presentation event.</p>
+                    <button class="view-photos-btn" data-img="ins.jpg">VIEW PHOTOS</button>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card" data-category="events">
+                <div class="card-image-wrapper">
+                    <img src="th.webp">
+                    <span class="campus-tag">COLLEGE CAMPUS</span>
+                </div>
+                <div class="card-body">
+                    <span class="date">6 SEPTEMBER 2026</span>
+                    <h3>Defence Day Celebration</h3>
+                    <p class="desc">Tribute and speeches organized by cadets and students.</p>
+                    <button class="view-photos-btn" data-img="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1200&q=80" data-title="Defence Day Celebration">VIEW PHOTOS</button>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card" data-category="academics">
+                <div class="card-image-wrapper">
+                    <img src="hyg.jpg">
+                    <span class="campus-tag">GIRLS WING</span>
+                </div>
+                <div class="card-body">
+                    <span class="date">27 APRIL 2026</span>
+                    <h3>Oral Hygiene Awareness</h3>
+                    <p class="desc">Interactive workshop on health and dental care.</p>
+                    <button class="view-photos-btn" data-img="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=1200&q=80" data-title="Oral Hygiene Awareness">VIEW PHOTOS</button>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card" data-category="sports">
+                <div class="card-image-wrapper">
+                    <img src="spots.webp">
+                    <span class="campus-tag">SPORTS GROUND</span>
+                </div>
+                <div class="card-body">
+                    <span class="date">12 MARCH 2026</span>
+                    <h3>Annual Sports Gala 2026</h3>
+                    <p class="desc">Athletic competitions, races and trophy distribution.</p>
+                    <button class="view-photos-btn" data-img="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=1200&q=80" data-title="Annual Sports Gala 2026">VIEW PHOTOS</button>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="card" data-category="academics">
+                <div class="card-image-wrapper">
+                    <img src="eee.webp">
+                    <span class="campus-tag">MAIN LAB</span>
+                </div>
+                <div class="card-body">
+                    <span class="date">15 FEBRUARY 2026</span>
+                    <h3>Science & IT Exhibition</h3>
+                    <p class="desc">Students presented innovative robotics and science projects.</p>
+                    <button class="view-photos-btn" data-img="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=80" data-title="Science & IT Exhibition">VIEW PHOTOS</button>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="card" data-category="events">
+                <div class="card-image-wrapper">
+                    <img src="anu.webp">
+                    <span class="campus-tag">AUDITORIUM</span>
+                </div>
+                <div class="card-body">
+                    <span class="date">20 JANUARY 2026</span>
+                    <h3>Annual Drama & Arts Festival</h3>
+                    <p class="desc">Stage performances, music, and cultural arts display.</p>
+                    <button class="view-photos-btn" data-img="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1200&q=80" data-title="Annual Drama & Arts Festival">VIEW PHOTOS</button>
+                </div>
+            </div>
+ <div class="card" data-category="events">
+                <div class="card-image-wrapper">
+                    <img src="lab.jpeg">
+                    <span class="campus-tag">AUDITORIUM</span>
+                </div>
+                <div class="card-body">
+                    <span class="date">20 JANUARY 2026</span>
+                    <h3>labor day celebration</h3>
+                    <p class="desc">"Honoring the hands that build our nation and the minds that drive our progress. Happy Labor Day!"</p>
+                    <button class="view-photos-btn" data-img="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1200&q=80" data-title="Annual Drama & Arts Festival">VIEW PHOTOS</button>
+                </div>
+            </div>
+            <div class="card" data-category="events">
+                <div class="card-image-wrapper">
+                    <img src="14.webp">
+                    <span class="campus-tag">AUDITORIUM</span>
+                </div>
+                <div class="card-body">
+                    <span class="date">20 JANUARY 2026</span>
+                    <h3>14 august</h3>
+                    <p class="desc">"Honoring the hands that build our nation and the minds that drive our progress. Happy Labor Day!"</p>
+                    <button class="view-photos-btn" data-img="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1200&q=80" data-title="Annual Drama & Arts Festival">VIEW PHOTOS</button>
+                </div>
+            </div>
+        </div>
+     
+    </section>
+
+    <!-- Image Lightbox Modal -->
+    <div id="image-modal" class="modal">
+        <span class="close-modal">&times;</span>
+        <div class="modal-content">
+            <img id="modal-img" src="" alt="Event Detail">
+            <h3 id="modal-caption"></h3>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="footer-container">
+            <div class="footer-col about-col">
+                <h3>BAHRIA COLLEGE<br>KARACHI</h3>
+                <p>Bahria College provides quality education in a safe and disciplined environment, emphasizing academic excellence and leadership development.</p>
+                <p class="quote">"KNOWLEDGE IS POWER"</p>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Boys Wing</a></li>
+                    <li><a href="#">Girls Wing</a></li>
+                    <li><a href="#">Admissions</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Explore More</h4>
+                <ul>
+                    <li><a href="#">Faculties</a></li>
+                    <li><a href="#">Our Stars</a></li>
+                    <li><a href="#">Downloads</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <div class="contact-info">
+                    <p><strong>PHONE</strong><br>021-99211111</p>
+                    <p><strong>EMAIL</strong><br>info@bahriacollege.edu.pk</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="act.js"></script>
+</body>
+</html>
